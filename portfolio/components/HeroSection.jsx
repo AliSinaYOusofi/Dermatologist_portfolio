@@ -3,15 +3,15 @@ import React from 'react'
 
 export default function HeroSection() {
     return (
-        
         <div className="max-w-[85rem] mx-auto bg-gray-50 px-4 sm:px-6 lg:px-8 mt-10 rounded-md">
             
             <div className="flex items-center justify-center h-1/2 flex-col md:flex-row">
+                
                 <div className=" md:w-1/2">
                 
                     <h1 className="block  p-1 md:p-0 text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl">Meet Ghida, </h1>
                     <p className="mt-3 text-lg text-gray-800 ">
-                        the passionate medical student from Stanford University who is bridging the gap in dermatology care for Muslim Middle Eastern and South Asian patients.
+                        a passionate medical student from Stanford University who is bridging the gap in dermatology care for Muslim Middle Eastern and South Asian patients.
                         And the 2nd generation Palestinian refugee working to advance dermatology care for minority populations.
                     </p>
 
@@ -54,8 +54,8 @@ export default function HeroSection() {
                         width={400}
                         height={200} 
                         className="w-full h-[500px] rounded-xl object-cover" 
-                        src="/../public/Picture.png" 
-                        alt="Image Description" 
+                        src="/../public/static/Picture.png" 
+                        alt="Portfolio image"
                     />
                 
                 </div>

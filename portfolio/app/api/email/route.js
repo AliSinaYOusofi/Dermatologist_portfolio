@@ -48,7 +48,7 @@ export async function POST(req, res) {
         await transporter.sendMail(mailOptions);
         return new Response({ message: 'EmailSentSuccessfully' });
     } catch (error) {
-        console.log(error);
-        return new Response({ error: 'Failed to send email' });
+        console.log(error.message, "Error sending email address");
+        return new Response({ message: 'failedToSendEmail' });
     }
 }
