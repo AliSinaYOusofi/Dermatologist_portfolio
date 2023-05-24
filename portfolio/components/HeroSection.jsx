@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import DoctorImage from "../public/static/Picture.png"
 
 export default function HeroSection() {
     return (
@@ -50,14 +51,11 @@ export default function HeroSection() {
 
                 <div className="mt-10  lg:mt-0 lg:p-5">
                 
-                    <Image
-                        width={400}
-                        height={200} 
+                    <img
                         className="w-full h-[500px] rounded-xl object-cover" 
-                        src="/../public/static/Picture.png" 
+                        src={"https://res.cloudinary.com/df4zdkl7h/image/upload/v1684908092/Picture_iqt2mu.png"} 
                         alt="Portfolio image"
                     />
-                
                 </div>
                 
             </div>
