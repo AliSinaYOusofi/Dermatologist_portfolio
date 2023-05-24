@@ -50,11 +50,11 @@ export default function HeroSection() {
 
                 <div className="mt-10  lg:mt-0 lg:p-5">
                 
-                    <Image
+                    <img
                         width={400}
                         height={200} 
                         className="w-full h-[500px] rounded-xl object-cover" 
-                        src="/../public/Picture.png" 
+                        src="https://res.cloudinary.com/df4zdkl7h/image/upload/v1684908092/Picture_iqt2mu.png" 
                         alt="Image Description" 
                     />
                 
