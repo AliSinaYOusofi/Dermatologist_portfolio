@@ -1,6 +1,9 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 export default function Contact() {
 
@@ -10,6 +13,27 @@ export default function Contact() {
     const [emailResponse, setEmailResponse] = useState();
     const [errorMessage, setErrorMessage] = useState();
 
+    const contactRef = useRef(null);
+
+    useEffect(() => {
+        
+        gsap.registerPlugin(ScrollTrigger);
+    
+        const getInvolvedEl = contactRef.current;
+    
+        gsap.from(getInvolvedEl, {
+          opacity: 0,
+          y: 150,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: getInvolvedEl,
+            start: 'top bottom',
+            end: 'bottom bottom',
+            toggleActions: "play pause resume reset",
+          },
+        });
+    }, []);
     const handleEmailSubmitButton = async (event) => {
 
         event.preventDefault();
@@ -55,7 +79,7 @@ export default function Contact() {
     return (
         <section id="contact" className="bg-white ">
             
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div ref={contactRef} className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Do you have a skin concern or a medical question? Are you looking for advice on your skincare routine? Looking to schedule an appointment with a dermatologist? Let us know how we can help.</p>

@@ -1,25 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function NavBar() {
+export default function NavBar({timeline}) {
     
     const [navbar, setNavbar] = useState(false);
+    
+    console.log(timeline);
 
+    useEffect(() => {
+         // Pause the timeline at the start
+      }, [timeline]);
     return (
-        <nav className=" w-[90%] mx-auto bg-gray-50 relative rounded rounded-bl-md rounded-br-md">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className=" w-[90%] main mx-auto bg-gray-50 relative rounded rounded-bl-md rounded-br-md">
+            <div className=" justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="">
-                            <h2 className="text-2xl font-bold">
-                                <svg
-                                    viewBox="0 0 448 512"
-                                    fill="currentColor"
-                                    className="w-10 h-10"
-                                >
-                                    <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm-96 55.2C54 332.9 0 401.3 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7 0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16s7.2-16 16-16v-24c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-40c0-29.8 20.4-54.9 48-62v-57.1c-6-.6-12.1-.9-18.3-.9h-91.4c-6.2 0-12.3.3-18.3.9v65.4c23.1 6.9 40 28.3 40 53.7 0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7v-59.1zM144 448c13.3 0 24-10.7 24-24s-10.7-24-24-24-24 10.7-24 24 10.7 24 24 24z" />
-                                </svg>
+                    <div className="icon flex items-center justify-between py-3 md:py-5 md:block">
+                        <a href="/">
+                            <h2 className="text-2xl font-bold ">
+                                <img
+                                    className=" rounded-sm p-1 w-[50px] h-[50px] md:w-[75px] md:h-[75px] lg:w-[80px] lg:h-[80px] bg-white object-contain" 
+                                    src="https://res.cloudinary.com/df4zdkl7h/image/upload/v1685141462/Screen_Shot_2023-05-16_at_8.44.52_PM_y4qhyk.png" />
                             </h2>
                         </a>
                         <div className="md:hidden">
@@ -62,7 +63,7 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                        className={`list flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
