@@ -14,11 +14,12 @@ function GetInvolved() {
       opacity: 0,
       x: 150,
       duration: 2,
-      ease: "power3.out",
+      ease: "easeInOut",
       scrollTrigger: {
         trigger: getInvolvedEl,
-        start: 'top bottom',
+        start: 'bottom bottom',
         end: 'bottom bottom',
+        scrub: 4,
         toggleActions: "play pause resume reset",
       },
     });

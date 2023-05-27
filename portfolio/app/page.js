@@ -1,12 +1,15 @@
 "use client";
 
 import About from '@/components/About'
+import Chart from '@/components/Chart';
 import Contact from '@/components/Contact'
+import DataTable from '@/components/DataTable';
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import GetInvolved from '@/components/GetInvolved'
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
+import QuotesContainer from '@/components/QuotesContainer';
 import { gsap } from 'gsap'
 import { useEffect, useLayoutEffect, useRef } from 'react'
 
@@ -32,8 +35,11 @@ export default function Home() {
       <HeroSection />
       <FAQ />
       <GetInvolved />
+      <QuotesContainer />
+      <Chart />
       <Contact />
       <About />
+      <DataTable />
       <Footer />
     </main>
   )
