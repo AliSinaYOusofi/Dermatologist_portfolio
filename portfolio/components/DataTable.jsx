@@ -50,12 +50,12 @@ export default function DataTable() {
                     <td className="border px-4 py-2"> </td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">Male</td>
+                    <td className="border px-4 py-2 pl-10">Male</td>
                     <td className="border px-4 py-2">5 (23.8)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">Female</td>
+                    <td className="border px-4 py-2 pl-10">Female</td>
                     <td className="border px-4 py-2">16 (76.2)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
@@ -65,22 +65,22 @@ export default function DataTable() {
                     <td className="border px-4 py-2"> </td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">Middle Eastern</td>
+                    <td className="border px-4 py-2 pl-10">Middle Eastern</td>
                     <td className="border px-4 py-2">11 (52.4)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">North African</td>
+                    <td className="border px-4 py-2 pl-10">North African</td>
                     <td className="border px-4 py-2">1 (4.8)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">South Asian</td>
+                    <td className="border px-4 py-2 pl-10">South Asian</td>
                     <td className="border px-4 py-2">8 (38.1)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">Other Asian</td>
+                    <td className="border px-4 py-2 pl-10">Other Asian</td>
                     <td className="border px-4 py-2">1 (4.8)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
@@ -90,12 +90,12 @@ export default function DataTable() {
                     <td className="border px-4 py-2"> </td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">1st generation immigrant</td>
+                    <td className="border px-4 py-2 pl-10">1st generation immigrant</td>
                     <td className="border px-4 py-2">14 (66.7)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>
                 <tr>
-                    <td className="border px-4 py-2">2nd generation immigrant</td>
+                    <td className="border px-4 py-2 pl-10">2nd generation immigrant</td>
                     <td className="border px-4 py-2">7 (33.3)</td>
                     <td className="border px-4 py-2">36.4 (26-71)</td>
                 </tr>

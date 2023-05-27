@@ -13,7 +13,7 @@ export default function QuotesContainer() {
 
         const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 
-        tl.to(containerRef.current, { duration: 100, x: -20000, ease: 'linear'});
+        tl.to(containerRef.current, { duration: 150, x: -20000, ease: 'linear'});
         tl.set(containerRef.current, { x: 0});
 
         if (pauseAnimation) tl.pause();

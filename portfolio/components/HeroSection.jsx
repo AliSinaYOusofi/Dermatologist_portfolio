@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HeroSection() {
     return (
-        <div className="hero max-w-[85rem] mx-auto bg-gray-50 px-4 sm:px-6 lg:px-8 mt-10 rounded-md">
+        <div className="hero overflow-x-hidden max-w-[85rem] mx-auto bg-gray-50 px-4 sm:px-6 lg:px-8 mt-10 rounded-md">
             
             <div className="flex items-center justify-center h-1/2 flex-col md:flex-row">
                 
