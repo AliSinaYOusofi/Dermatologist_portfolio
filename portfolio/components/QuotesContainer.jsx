@@ -6,21 +6,14 @@ import { gsap } from 'gsap';
 
 export default function QuotesContainer() {
     const containerRef = useRef(null);
-    const [containerWidth, setContainerWidth] = useState(0);
+    
     const [pauseAnimation, setPauseAnimation] = useState(false);
-
-    useEffect(() => {
-        // Get the width of the container
-        setContainerWidth(containerRef.current.offsetWidth);
-      }, []);
     
     useEffect(() => {
-        if (containerWidth === 0) return;
 
-        // Create the timeline animation
         const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 
-        tl.to(containerRef.current, { duration: 80, x: -20000, ease: 'linear'});
+        tl.to(containerRef.current, { duration: 150, x: -20000, ease: 'linear'});
         tl.set(containerRef.current, { x: 0});
 
         if (pauseAnimation) tl.pause();
@@ -29,23 +22,10 @@ export default function QuotesContainer() {
         return () => {
             tl.kill();
         }
-    }, [containerWidth, pauseAnimation]);
-
-    useEffect(() => {
-        const handleResize = () => {
-          setContainerWidth(containerRef.current.offsetWidth);
-        };
-      
-        handleResize();
-        window.addEventListener("resize", handleResize);
-      
-        return () => {
-          window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    }, [pauseAnimation]);
 
     return (
-        <div   className="relative w-[90%] mx-auto overflow-x-scroll bg-gray-50 mt-20 scrollbar-hide">
+        <div   className="relative w-[90%] mx-auto h-1/2  overflow-x-scroll bg-gray-50 mt-20 scrollbar-hide">
             <div ref={containerRef}  className="flex  items-center justify-center w-min">
 
                 <div className="w-fit">

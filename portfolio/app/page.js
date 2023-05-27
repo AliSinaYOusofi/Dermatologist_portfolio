@@ -11,12 +11,12 @@ import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
 import QuotesContainer from '@/components/QuotesContainer';
 import { gsap } from 'gsap'
-import { useEffect, useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 
 export default function Home() {
+
   const timelineRef = useRef(null); // Create a ref to store the timeline
 
-  
   useLayoutEffect(() => {
     gsap.timeline()
       .from('.main', { duration: 0.3, opacity: 0})
@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="w-full h-full scroll-smooth">
+    <main className="w-full h-full scroll-smooth overflow-hidden">
       <Navbar timeline={timelineRef}/>
       <HeroSection />
       <FAQ />
