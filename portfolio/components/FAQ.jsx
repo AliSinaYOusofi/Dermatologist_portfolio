@@ -17,6 +17,7 @@ export default function FAQ() {
                 opacity: 0,
                 ease: "ease=back.out(1.4)",
                 duration: 2,
+                stagger: 0.3,
                 scrollTrigger: {
                     trigger: box,
                     start: 'bottom bottom',
