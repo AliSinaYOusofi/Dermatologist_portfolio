@@ -2,15 +2,10 @@
 
 import { useEffect, useState } from "react";
 
-export default function NavBar({timeline}) {
+export default function NavBar({}) {
     
     const [navbar, setNavbar] = useState(false);
-    
-    console.log(timeline);
 
-    useEffect(() => {
-         // Pause the timeline at the start
-      }, [timeline]);
     return (
         <nav className=" w-[90%] main mx-auto bg-gray-50 relative rounded rounded-bl-md rounded-br-md">
             <div className=" justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">

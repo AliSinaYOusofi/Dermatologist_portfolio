@@ -32,6 +32,7 @@ export default function Home() {
   return (
     <main className="w-full h-full scroll-smooth overflow-hidden">
       <Navbar timeline={timelineRef}/>
+      <Footer />
       <HeroSection />
       <FAQ />
       <GetInvolved />
@@ -40,7 +41,6 @@ export default function Home() {
       <Contact />
       <About />
       <DataTable />
-      <Footer />
     </main>
   )
 }
