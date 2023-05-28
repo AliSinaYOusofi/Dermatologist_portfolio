@@ -34,7 +34,7 @@ export default function DataTable() {
         <div ref={containerRef}  className="w-[90%] mx-auto mt-20">
             <h1 className="block  p-1 md:p-0 text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl"> A snapshot of patient demographics. </h1>
             
-        <table className="table-auto w-full bg-gray-50 mt-16 ">
+        <table className="table-auto w-full bg-gray-50 mt-16 mb-10">
             <thead>
             <tr>
                 <th className="px-4 py-2">Characteristic</th>
@@ -124,7 +124,7 @@ export default function DataTable() {
                 </tr>
 
                 <tr>
-                    <td className="border px-4 py-2" rowspan="4">Patient felt discriminated against in their daily living</td>
+                    <td className="border px-4 py-2" rowsSpan="4">Patient felt discriminated against in their daily living</td>
                     <td className="border px-4 py-2">A couple of times a month</td>
                     <td className="border px-4 py-2">3 (14.3)</td>
                 </tr>
